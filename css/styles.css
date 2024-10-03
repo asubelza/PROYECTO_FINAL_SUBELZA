@@ -72,7 +72,7 @@ h2 {
 }
 
 .color_nav {
-  background-color: wheat;
+  background-color: rgba(128, 128, 228, 0.8549019608);
   opacity: 0.8;
 }
 
@@ -87,22 +87,22 @@ h2 {
 }
 
 td, th {
-  background: #fff;
-  color: #000;
+  background: rgba(255, 255, 255, 0.8235294118);
+  color: rgba(111, 173, 30, 0.7725490196);
 }
 
 table {
   border-collapse: separate;
   border-spacing: 5px;
-  background: #000 url("gradient.gif") bottom left repeat-x;
-  color: #fff;
+  background: rgba(111, 173, 30, 0.7725490196) url("gradient.gif") bottom left repeat-x;
+  color: rgba(255, 255, 255, 0.8235294118);
 }
 
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-style: italic;
-  color: #000000;
+  color: rgba(111, 173, 30, 0.7725490196);
 }
 
 /*Fin de CSS Pagina Anterior*/

@@ -1,0 +1,40 @@
+@import "variables";
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.color_nav{
+    background-color: $medio;
+    opacity: 0.8;
+}
+
+.icono{
+    width: 40px;
+    height: 35px;
+}
+.imageninterna{
+    background-image: url(../Imagenes/paper.jpg);
+    background-repeat: no-repeat;
+}
+td, th {
+    background: $claro;
+    color: $oscuro;
+ }
+ table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: $oscuro url("gradient.gif") bottom left repeat-x;
+    color: $claro;
+ }
+ p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: $oscuro;
+}
+/*Fin de CSS Pagina Anterior*/
+.formulario{
+    background-color: gray;
+}
