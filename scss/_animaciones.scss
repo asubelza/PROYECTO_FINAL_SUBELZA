@@ -1,0 +1,32 @@
+@import "variables";
+
+// _navbar.scss
+.navbar {
+    // Agrega estilos personalizados
+    background-color: $claro;
+    
+    .navbar-brand {
+        color: $medio;
+
+        &:hover {
+            color: lighten($oscuro, 10%); // Efecto hover
+        }
+    }
+
+    .nav-link {
+        color: $medio;
+
+        &:hover {
+            color: lighten($oscuro, 10%); // Efecto hover
+        }
+    }
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Opción para cubrir todo el contenedor */
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+

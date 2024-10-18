@@ -2,17 +2,32 @@
 @media screen and (max-width: 768px){
     .container{  
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
         gap: 5px 5px;
         grid-auto-flow: row;
         grid-template-areas:
           "header header"
           "main main"
           "main main"
+          "main main"
           "aside1 aside1"
           "aside2 aside2"
           "section1 section2"
           "footer footer";
+    }
+    body{
+        h2{
+            font-family: "PlaypenSans-Medium";
+            font-size: 1.25rem;
+            font-style: italic;
+            color: $oscuro;
+        }
+        h3{
+            font-family: "PlaypenSans-Medium";
+            font-size: 1rem;
+            font-style: italic;
+            color: $oscuro;
+        }
     }
 }
 
@@ -26,10 +41,25 @@
           "header"
           "main"
           "main"
+          "main"
           "aside1"
           "aside2"
           "section1"
           "section2"
           "footer";
+    }
+    body{
+        h2{
+            font-family: "PlaypenSans-Bold";
+            font-size: 1rem;
+            font-style: italic;
+            color: $oscuro;
+        }
+        h3{
+            font-family: "PlaypenSans-Medium";
+            font-size: 0.80rem;
+            font-style: italic;
+            color: $oscuro;
+        }
     }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,66 +15,145 @@ body .background-video {
   top: 0;
   bottom: 0;
   z-index: -1;
+  opacity: 0.2;
+}
+body main {
+  align-content: center;
+  justify-content: center;
+  text-align: left;
+  padding: 1px;
+}
+body aside {
+  width: 100%;
+  word-wrap: break-word;
+}
+body section {
+  width: 100%;
+  word-wrap: break-word;
+}
+body section .table {
+  table-layout: auto; /* Fija el ancho de las columnas */
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+}
+body h2 {
+  font-family: "Edu AU VIC WA NT Hand", serif;
+  font-optical-sizing: auto;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: hsl(87, 94%, 7%);
+}
+body h3 {
+  font-family: "roboto" sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: hsl(87, 94%, 7%);
 }
 
 .container {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 0.9fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
   gap: 5px 5px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header" "main main aside1" "main main aside2" "section1 section2 section2" "footer footer footer";
-}
-
-img {
-  object-fit: cover;
-  width: 80%;
-  height: 80%;
+  grid-template-areas: "header header header" "main aside1 aside1" "main aside2 aside2" "section1 section2 section2" "footer footer footer";
+  z-index: 0;
 }
 
 .header {
   grid-area: header;
   font-weight: bold;
+  position: relative;
+  z-index: 2;
 }
 
 .main {
   grid-area: main;
-  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(87, 94%, 7%) 0, 0%, 0%; /* Fondo de las cajas */
+  border: 2px solid rgba(128, 128, 228, 0.8549019608); /* Borde de 2px de color verde */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 2px 2px 10px hsl(87, 94%, 7%);
+  padding: 10px;
 }
 
 .aside1 {
   grid-area: aside1;
+  position: relative;
+  z-index: 1;
+  background-color: hsl(87, 94%, 7%) 0, 0%, 0%; /* Fondo de las cajas */
+  border: 2px solid rgba(128, 128, 228, 0.8549019608); /* Borde de 2px de color verde */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 2px 2px 10px hsl(87, 94%, 7%);
+  padding: 10px;
 }
 
 .aside2 {
   grid-area: aside2;
+  position: relative;
+  z-index: 1;
+  background-color: hsl(87, 94%, 7%) 0, 0%, 0%; /* Fondo de las cajas */
+  border: 2px solid rgba(128, 128, 228, 0.8549019608); /* Borde de 2px de color verde */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 2px 2px 10px hsl(87, 94%, 7%);
+  padding: 10px;
 }
 
 .section2 {
   grid-area: section2;
+  position: relative;
+  z-index: 1;
+  background-color: hsl(87, 94%, 7%) 0, 0%, 0%; /* Fondo de las cajas */
+  border: 2px solid rgba(128, 128, 228, 0.8549019608); /* Borde de 2px de color verde */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 2px 2px 10px hsl(87, 94%, 7%);
+  padding: 10px;
 }
 
 .section1 {
   grid-area: section1;
+  position: relative;
+  z-index: 1;
+  background-color: hsl(87, 94%, 7%) 0, 0%, 0%; /* Fondo de las cajas */
+  border: 2px solid rgba(128, 128, 228, 0.8549019608); /* Borde de 2px de color verde */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 2px 2px 10px hsl(87, 94%, 7%);
+  padding: 10px;
 }
 
 .footer {
   grid-area: footer;
   font-family: "Roboto", sans-serif;
-  text-align: right;
-  font-size: 1rem;
-}
-
-h2 {
   text-align: center;
-  padding: 20px;
+  font-size: 1rem;
+  z-index: 1;
+  background-color: hsl(87, 94%, 7%) 0, 0%, 0%; /* Fondo de las cajas */
+  border: 2px solid rgba(128, 128, 228, 0.8549019608); /* Borde de 2px de color verde */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 2px 2px 10px hsl(87, 94%, 7%);
+  padding: 10px;
 }
 
-.color_nav {
+td, th {
+  background: rgba(255, 255, 255, 0.8235294118);
+  color: hsl(87, 94%, 7%);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  background: hsl(87, 94%, 7%) url("gradient.gif") bottom left repeat-x;
+  color: rgba(255, 255, 255, 0.8235294118);
+}
+
+/*Fin de CSS Pagina Anterior*/
+.styled-background {
   background-color: rgba(128, 128, 228, 0.8549019608);
-  opacity: 0.8;
+  padding: 15px;
 }
 
 .icono {
@@ -81,42 +161,50 @@ h2 {
   height: 35px;
 }
 
-.imageninterna {
-  background-image: url(../Imagenes/paper.jpg);
-  background-repeat: no-repeat;
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8235294118);
+}
+.navbar .navbar-brand {
+  color: rgba(128, 128, 228, 0.8549019608);
+}
+.navbar .navbar-brand:hover {
+  color: hsl(87, 94%, 17%);
+}
+.navbar .nav-link {
+  color: rgba(128, 128, 228, 0.8549019608);
+}
+.navbar .nav-link:hover {
+  color: hsl(87, 94%, 17%);
 }
 
-td, th {
-  background: rgba(255, 255, 255, 0.8235294118);
-  color: rgba(111, 173, 30, 0.7725490196);
-}
-
-table {
-  border-collapse: separate;
-  border-spacing: 5px;
-  background: rgba(111, 173, 30, 0.7725490196) url("gradient.gif") bottom left repeat-x;
-  color: rgba(255, 255, 255, 0.8235294118);
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-style: italic;
-  color: rgba(111, 173, 30, 0.7725490196);
-}
-
-/*Fin de CSS Pagina Anterior*/
-.formulario {
-  background-color: gray;
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Opción para cubrir todo el contenedor */
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     gap: 5px 5px;
     grid-auto-flow: row;
-    grid-template-areas: "header header" "main main" "main main" "aside1 aside1" "aside2 aside2" "section1 section2" "footer footer";
+    grid-template-areas: "header header" "main main" "main main" "main main" "aside1 aside1" "aside2 aside2" "section1 section2" "footer footer";
+  }
+  body h2 {
+    font-family: "PlaypenSans-Medium";
+    font-size: 1.25rem;
+    font-style: italic;
+    color: hsl(87, 94%, 7%);
+  }
+  body h3 {
+    font-family: "PlaypenSans-Medium";
+    font-size: 1rem;
+    font-style: italic;
+    color: hsl(87, 94%, 7%);
   }
 }
 @media screen and (max-width: 480px) {
@@ -125,7 +213,19 @@ p {
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     gap: 5px 5px;
     grid-auto-flow: row;
-    grid-template-areas: "header" "main" "main" "aside1" "aside2" "section1" "section2" "footer";
+    grid-template-areas: "header" "main" "main" "main" "aside1" "aside2" "section1" "section2" "footer";
+  }
+  body h2 {
+    font-family: "PlaypenSans-Bold";
+    font-size: 1rem;
+    font-style: italic;
+    color: hsl(87, 94%, 7%);
+  }
+  body h3 {
+    font-family: "PlaypenSans-Medium";
+    font-size: 0.8rem;
+    font-style: italic;
+    color: hsl(87, 94%, 7%);
   }
 }
 
