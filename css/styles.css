@@ -84,7 +84,7 @@ body h3 {
 .aside1 {
   grid-area: aside1;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background-color: hsl(87, 94%, 7%) 0, 0%, 0%; /* Fondo de las cajas */
   border: 2px solid rgba(128, 128, 228, 0.8549019608); /* Borde de 2px de color verde */
   border-radius: 20px; /* Bordes redondeados */
@@ -106,7 +106,7 @@ body h3 {
 .section2 {
   grid-area: section2;
   position: relative;
-  z-index: 1;
+  z-index: 10;
   background-color: hsl(87, 94%, 7%) 0, 0%, 0%; /* Fondo de las cajas */
   border: 2px solid rgba(128, 128, 228, 0.8549019608); /* Borde de 2px de color verde */
   border-radius: 20px; /* Bordes redondeados */
@@ -146,7 +146,7 @@ td, th {
 table {
   border-collapse: separate;
   border-spacing: 5px;
-  background: hsl(87, 94%, 7%) url("gradient.gif") bottom left repeat-x;
+  background: hsl(87, 94%, 7%) bottom left repeat-x;
   color: rgba(255, 255, 255, 0.8235294118);
 }
 

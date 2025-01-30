@@ -85,7 +85,7 @@ body{
 .aside1{ 
     grid-area: aside1;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     background-color:$oscuro(0, 0%, 0%); /* Fondo de las cajas */
     border: 2px solid $medio; /* Borde de 2px de color verde */
     border-radius: 20px; /* Bordes redondeados */
@@ -107,7 +107,7 @@ body{
 .section2{ 
     grid-area: section2;
     position: relative;
-    z-index: 1;
+    z-index: 10;
     background-color:$oscuro(0, 0%, 0%); /* Fondo de las cajas */
     border: 2px solid $medio; /* Borde de 2px de color verde */
     border-radius: 20px; /* Bordes redondeados */
@@ -145,7 +145,7 @@ td, th {
  table {
     border-collapse: separate;
     border-spacing: 5px;
-    background: $oscuro url("gradient.gif") bottom left repeat-x;
+    background: $oscuro bottom left repeat-x;
     color: $claro;
  }
 
