@@ -67,7 +67,7 @@ body{
     grid-area: header; 
     font-weight: bold;
     position: relative;
-    z-index: 20;
+    z-index: 10;
 }
   
 .main{ 
@@ -85,7 +85,7 @@ body{
 .aside1{ 
     grid-area: aside1;
     position: relative;
-    z-index: 10;
+    z-index: 1;
     background-color:$oscuro(0, 0%, 0%); /* Fondo de las cajas */
     border: 2px solid $medio; /* Borde de 2px de color verde */
     border-radius: 20px; /* Bordes redondeados */
